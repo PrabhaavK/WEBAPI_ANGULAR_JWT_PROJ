@@ -1,0 +1,11 @@
+<p>courselist works!</p>
+<h2>Course List</h2>
+<div *ngFor="let course of courselist" class="card mb-3">
+  <div class="card-body">
+    <h5 class="card-title">{{ course.title }}</h5>
+    <p class="card-text">{{ course.discription }}</p>
+    <p class="card-text">Start Date: {{ course.courseStartDate | date }}</p>
+    <p class="card-text">End Date: {{ course.courseEndDate | date }}</p>
+    <button class="btn btn-primary">Details</button>
+  </div>
+</div>
